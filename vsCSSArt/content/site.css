@@ -24,10 +24,11 @@
  */
 
 :root {
-    --right-button-long-transform-LR: 316.5px;
+    --right-button-long-transform-LR: 314.5px;
     --right-button-long-transform-UD: 154px;
-    --right-button-short-transform-LR: 333.5px;
+    --right-button-short-transform-LR: 332.5px;
     --right-button-short-transform-UD: 234px;
+    --phone-container-radius: 1.3em;
 }
 
 
@@ -67,6 +68,7 @@ img,
 svg,
 video {
     vertical-align: middle;
+    
 }
 
 /*
@@ -137,8 +139,8 @@ hr {
     background-color: #a3b18a;
     position: absolute;
     display: flex;
-    width: 100%;
-    height: 95vh;
+    width: 100vw;
+    height: 100vh;
     justify-content: center;
     align-items: center
 }
@@ -148,7 +150,7 @@ hr {
     margin-top: 0px;
     margin-bottom: 0px;
     border: medium outset #333533;
-    border-radius: 5%;
+    border-radius: var(--phone-container-radius);
     height: 634.84995072px;
     width: 347.904px;
     background-color: #212529;
@@ -156,13 +158,12 @@ hr {
 
 
 .front-camera-circle {
-    position: inherit;
     margin-left: 50%;
     margin-top: 1.5px;
     border: thin solid #f8f9fa;
-    border-radius: 45%;
-    height: 9.8px;
-    width: 10.3px;
+    border-radius: 50px;
+    height: 14.8px;
+    width: 14.3px;
     background-color: #adb5bd;
     display: block;
     top: 0;
@@ -175,50 +176,53 @@ hr {
 }*/
 
 .right-button-long {
-    position: inherit;
-    border-radius: 28%;
+    border-radius: 50px;
     width: 70.8px;
     height: 3.2px;
     /*background: #242423;*/
     background-color: red;
-    transform: translate(--right-button-long-transform-LR, --right-button-long-transform-UD) rotate(90deg);
-    -webkit-transform: translate(--right-button-long-transform-LR, --right-button-long-transform-UD) rotate(90deg);
-    -moz-transform: translate(--right-button-long-transform-LR, --right-button-long-transform-UD) rotate(90deg);
-    -o-transform: translate(--right-button-long-transform-LR, --right-button-long-transform-UD) rotate(90deg);
-    -ms-transform: translate(--right-button-long-transform-LR, --right-button-long-transform-UD) rotate(90deg);
+    transform: translate(var(--right-button-long-transform-LR), var(--right-button-long-transform-UD)) rotate(90deg);
+    -webkit-transform: translate(var(--right-button-long-transform-LR), var(--right-button-long-transform-UD)) rotate(90deg);
+    -moz-transform: translate(var(--right-button-long-transform-LR), var(--right-button-long-transform-UD)) rotate(90deg);
+    -o-transform: translate(var(--right-button-long-transform-LR), var(--right-button-long-transform-UD)) rotate(90deg);
+    -ms-transform: translate(var(--right-button-long-transform-LR), var(--right-button-long-transform-UD)) rotate(90deg);
     /*310.5px, 200px*/
 }
 
 .right-button-short {
-    position: inherit;
-    border-radius: 28%;
+    border-radius: 50px;
     width: 35.8px;
     height: 3.2px;
     /*background: #242423;*/
     background-color: red;
-    transform: translate(right-button-short-transform-LR, right-button-short-transform-UD) rotate(90deg);
-    -webkit-transform: translate(right-button-short-transform-LR, right-button-short-transform-UD) rotate(90deg);
-    -moz-transform: translate(right-button-short-transform-LR, right-button-short-transform-UD) rotate(90deg);
-    -o-transform: translate(right-button-short-transform-LR, right-button-short-transform-UD) rotate(90deg);
-    -ms-transform: translate(right-button-short-transform-LR, right-button-short-transform-UD) rotate(90deg);
+    transform: translate(var(--right-button-short-transform-LR), var(--right-button-short-transform-UD)) rotate(90deg);
+    -webkit-transform: translate(var(--right-button-short-transform-LR), var(--right-button-short-transform-UD)) rotate(90deg);
+    -moz-transform: translate(var(--right-button-short-transform-LR), var(--right-button-short-transform-UD)) rotate(90deg);
+    -o-transform: translate(var(--right-button-short-transform-LR), var(--right-button-short-transform-UD)) rotate(90deg);
+    -ms-transform: translate(var(--right-button-short-transform-LR), var(--right-button-short-transform-UD)) rotate(90deg);
 }
+
+/*
+ * First Phone Screen
+ */
 
 .phone-screen-background {
     position: relative;
     border: #333533;
-    border-radius: 5%;
-    height: 624.84995072px;
-    width: 337.904px;
+    border-radius: var(--phone-container-radius);
+    height: 627.849951px;
+    width: 344.904px;
     background-image: url(https://cdn.cnn.com/cnnnext/dam/assets/220531142331-bisa-butler-ella-restricted.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: none;
-    transition-delay: 0.5s;
-    -webkit-transition-delay: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition-delay: 0.5s;
-    -ms-transition-delay: 0.5s;
+    transition-delay: 0.3s;
+    -webkit-transition-delay: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition-delay: 0.3s;
+    -ms-transition-delay: 0.3s;
+   
 }
 
 
@@ -227,8 +231,8 @@ hr {
     position: relative;
     margin-left: 0px;
     color: #f7fff7;
-    height: 80.8px;
-    width: 80.8px;
+    height: 55.8px;
+    width: 58.8px;
     transform: translate(134.5px, 514px);
     -webkit-transform: translate(134.5px, 514px);
     -moz-transform: translate(134.5px, 514px);
@@ -236,54 +240,86 @@ hr {
     -ms-transform: translate(134.5px, 514px);
 }
 
+
 .bg-group-landing_screen {
     position: inherit;
     padding: -0.3px;
 }
 
 .border-top-gray {
-    position: relative;
-    top: 0;
-    border-top-left-radius: 45%;
-    border-top-right-radius: 45%;
-    display: inline-grid;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    display: inline-flex;
     grid-template-columns: min-content min-content min-content min-content min-content min-content min-content min-content min-content min-content;
     background-color: gray;
-    height: 30px;
+    height: 15px;
     width: 100%;
+    transform: translate(0px, -8px);
+    -webkit-transform: translate(0px, -8px);
+    -moz-transform: translate(0px, -8px);
+    -o-transform: translate(0px, -8px);
+    -ms-transform: translate(0px, -8px);
 }
 
 
 .border-bottom-gray {
-    position: relative;
-    bottom: 0;
-    border-bottom-left-radius: 45%;
-    border-bottom-right-radius: 45%;
-    display: inline-grid;
-    grid-template-columns:  min-content  min-content;
-    background-image: linear-gradient(to top, lightgray, red);
-    height: 30px;
+    border-bottom-left-radius: var(--phone-container-radius);
+    border-bottom-right-radius: var(--phone-container-radius);
+    display: inline-flex;
+    grid-template-columns: min-content min-content;
+    background-color: red;
+    height: 16px;
     width: 100%;
+    transform: translate(0px, 586px);
+    -webkit-transform: translate(0px, 586px);
+    -moz-transform: translate(0px, -8px);
+    -o-transform: translate(0px, -8px);
+    -ms-transform: translate(0px, -8px);
 }
 
+
+.border-bottom-gray-l2 {
+    border-bottom-left-radius: var(--phone-container-radius);
+    border-bottom-right-radius: var(--phone-container-radius);
+    background-color: greenyellow;
+    height: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+
+.border-bottom-gray-l3 {
+    border-radius: 50px;
+    background-color: black;
+    height: 5px;
+    width: 127px;
+    margin-left: 30%;
+    position: fixed;
+    bottom: 0;
+}
+
+
 .left-logo-service {
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: 0px;
     margin-left: 14px;
 }
 
+/*
+ * Second Phone Screen
+ */
+
 .front-camera-circle-black {
-    position: inherit;
     margin-left: 81px;
     margin-top: 1.5px;
     border: thin solid #f8f9fa;
-    border-radius: 45%;
-    height: 9.8px;
-    width: 10.3px;
+    border-radius: 50px;
+    height: 14.8px;
+    width: 14.3px;
     background-color: black;
     bottom: 0;
-    
 }
 
 .key-border-top,
@@ -293,8 +329,8 @@ hr {
 .wifi_coverage-border-top,
 .signal_strength-border-top,
 .battery_indicator-border-top {
-    height: 18px;
-    width: 18px;
+    height: 13.8px;
+    width: 13.8px;
     background-color: black;
     color: black;
     bottom: 0;
@@ -308,20 +344,94 @@ hr {
     font-size: 12px;
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: 0px;
-    margin-left: 5px;
+    margin-left: 0px;
+    /* margin: 0px; */
+    margin-right: 0px;
+    height: fit-content;
+    width: fit-content;
+    /* display: block; */
+    color: white;
 }
 
+/*
+ * Third Phone Screen
+ */
+.all-app-background {
+    position: relative;
+    border: #333533;
+    border-radius: var(--phone-container-radius);
+    height: 627.849951px;
+    width: 344.904px;
+    background-image: url(https://admin.itsnicethat.com/images/92VMFww4GUNoDx-XiakpEqIuQbY=/6454/format-webp%7Cwidth-1440/59e4cc787fa44c45b800466a.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: none;
+    transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+}
+
+.all-app-search {
+    display: block;
+    padding: -0.3px;
+}
+
+.status-top-display {
+    display: inline-flex;
+    margin: 5px 0px;
+}
+
+.left-logo-time {
+    margin-left: 12px;
+    margin-bottom: 0px;
+    padding: 0px 0px;
+    height: min-content;
+    width: min-content;
+    color: white;
+    font-size: 11px;
+}
+
+.search-bar-apps {
+    margin: 0px 8px;
+    margin-bottom: 23px;
+    border-radius: 50px;
+    width: 41vw;
+    height: 39.2px;
+    background-color: darkgray;
+}
 
 .app-container-template {
     height: 56px;
     width: 56px;
-    background-color: darkslategray;
-    border-radius: 37%;
-    margin: 12px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 24px;
+    margin: 0px;
 }
 
-.app-row-container {
-    display: inline-grid;
-    grid-template-columns: min-content min-content min-content min-content;
-    padding: 0px 12px;
+.app-row-container1,
+.app-row-container2,
+.app-row-container3,
+.app-row-container4,
+.app-row-container5 {
+    display: inline-flex;
+    grid-template-columns: min-content min-content min-content min-content min-content min-content min-content min-content;
+    padding: 22px 12px;
+    margin-top: -10px;
+}
+
+.app-row-container1 {
+    
+
+        
+}
+
+.app-container-text {
+    color: var(--white);
+    margin: -12px 0px;
+    font-size: 11px;
+    text-overflow: clip;
+    text-align: center;
 }

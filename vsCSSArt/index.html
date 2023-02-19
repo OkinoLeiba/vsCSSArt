@@ -20,10 +20,10 @@
             <div id="front-camera-circle" class="front-camera-circle" style="display: none;"></div>
             <div class="right-button-long"></div>
             <div class="right-button-short" onclick=toggleCSS()></div>
-            <img id="bt-inv-center-toggle" src="img/fingerprint_base-display.png" alt="fingerprint id" height="5" width="5" onclick=toggleCSS() />
-            <div class="bg-group-landing_screen">
-                <div id="phone-screen-background" class="phone-screen-background" style="display: none;">
-                    <div class="border-top-gray" style="display: none;">
+            <img id="bt-inv-center-toggle" src="img/fingerprint_base-display.png" alt="fingerprint id" height="5" width="5" onclick=toggleCSS() style="display: none;" />
+            <div id="bg-group-landing_screen" class="bg-group-landing_screen" style="display: block;">
+                <div id="phone-screen-background" class="phone-screen-background" style="display: block;">
+                    <div class="border-top-gray">
                         <p class="left-logo-service">SADT&T</p>
                         <div class="front-camera-circle-black"></div>
                         <img class="key-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/vpn-service-connected.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/vpn-service-connected.jpg?$ORIGIN_JPG$" src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/vpn-service-connected.jpg?$ORIGIN_JPG$" alt="key located top right" height="312" width="312" style="">
@@ -35,16 +35,89 @@
                         <p class="battery_percentage-border-top" alt="battery_percentage located top right" height="312" width="312">100%</p>
                         <img class="battery_indicator-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/battery-charging.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/battery-charging.jpg?$ORIGIN_JPG$" src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/battery-charging.jpg?$ORIGIN_JPG$" alt="battery_indicator located top right" height="312" width="312" style="" />
                     </div>
-                    <div class="border-bottom-gray"></div>
+                    <div class="border-bottom-gray">
+                        <div class="border-bottom-gray-l2">
+                            <div class="border-bottom-gray-l3"></div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div id="all-app-search" class="all-app-search" style="display: none;">
+                <div id="all-app-background" class="all-app-background" style="display: none;">
+                    <div class="status-top-display">
+                        <p class="left-logo-time">TIME</p>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="front-camera-circle-black"></div>
+                        <img class="key-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/vpn-service-connected.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/vpn-service-connected.jpg?$ORIGIN_JPG$" src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/vpn-service-connected.jpg?$ORIGIN_JPG$" alt="key located top right" height="312" width="312" style="">
+                        <img class="battery-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/powersaving_mode-activated.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/powersaving_mode-activated.jpg?$ORIGIN_JPG$" src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/powersaving_mode-activated.jpg?$ORIGIN_JPG$" alt="battery located top right" height="312" wclassth="312" style="" />
+                        <img class="clock-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/alarm-activated.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/alarm-activated.jpg?$ORIGIN_JPG$" src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/alarm-activated.jpg?$ORIGIN_JPG$" alt="clock located top right" height="312" width="312" style="" />
+                        <img class="sound_indicator-border-top" data-desktop-src=" https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/mute-mode.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/mute-mode.jpg?$ORIGIN_JPG$" src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/mute-mode.jpg?$ORIGIN_JPG$" alt="sound_indicator located top right" height="312" width="312" style="" />
+                        <img class="wifi_coverage-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/wi-fi-connected.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/wi-fi-connected.jpg?$ORIGIN_JPG$" src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/wi-fi-connected.jpg?$ORIGIN_JPG$" alt="network_coverage located top right" height="312" width="312" style="" />
+                        <img class="signal_strength-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/signal-strength.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/signal-strength.jpg?$ORIGIN_JPG$" src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/signal-strength.jpg?$ORIGIN_JPG$" alt="signal_strength located top right" height="312" width="312" style="" />
+                        <p class="battery_percentage-border-top" alt="battery_percentage located top right" height="312" width="312">100%</p>
+                        <img class="battery_indicator-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/battery-charging.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/battery-charging.jpg?$ORIGIN_JPG$" src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/battery-charging.jpg?$ORIGIN_JPG$" alt="battery_indicator located top right" height="312" width="312" style="" />
+                    </div>
+                    <div class="search-bar-apps"></div>
+                    <div class="app-row-container1">
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                    </div>
+                    <div class="app-row-container2">
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                    </div>
+                    <div class="app-row-container3">
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                    </div>
+                    <div class="app-row-container4">
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                    </div>
+                    <div class="app-row-container5">
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                        <div class="app-container-template"></div>
+                        <p class="app-container-text">TEST</p>
+                    </div>
+                    <div class="nav-screen-bt"></div>
+                </div>
+            </div>
 
-            </div>
-            <div class="app-row-container">
-                <div class="app-container-template"></div>
-                <div class="app-container-template"></div>
-                <div class="app-container-template"></div>
-                <div class="app-container-template"></div>
-            </div>
         </div>
     </section>
 
