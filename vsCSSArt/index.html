@@ -21,8 +21,8 @@
             <div class="right-button-long"></div>
             <div class="right-button-short" onclick=toggleCSS()></div>
             <img id="bt-inv-center-toggle" src="img/fingerprint_base-display.png" alt="fingerprint id" height="5" width="5" onclick=toggleCSS() style="display: none;" />
-            <div id="bg-group-landing_screen" class="bg-group-landing_screen" style="display: block;">
-                <div id="phone-screen-background" class="phone-screen-background" style="display: block;">
+            <div id="bg-group-landing_screen" class="bg-group-landing_screen" style="display: none;">
+                <div id="phone-screen-background" class="phone-screen-background" style="display: none;">
                     <div class="border-top-gray">
                         <p class="left-logo-service">SADT&T</p>
                         <div class="front-camera-circle-black"></div>
@@ -42,8 +42,8 @@
                     </div>
                 </div>
             </div>
-            <div id="all-app-search" class="all-app-search" style="display: none;">
-                <div id="all-app-background" class="all-app-background" style="display: none;">
+            <div id="all-app-search" class="all-app-search" style="display: block;">
+                <div id="all-app-background" class="all-app-background" style="display: block;">
                     <div class="status-top-display">
                         <p class="left-logo-time">TIME</p>
                         <div></div>
@@ -65,54 +65,66 @@
                     </div>
                     <div class="search-bar-apps"></div>
                     <div class="app-row-container1">
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                    </div>
-                    <div class="app-row-container2">
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                    </div>
-                    <div class="app-row-container3">
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                    </div>
-                    <div class="app-row-container4">
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                    </div>
-                    <div class="app-row-container5">
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
-                        <div class="app-container-template"></div>
-                        <p class="app-container-text">TEST</p>
+                        <div class="app-column-container1">
+                            <div class="app-container-search-bar1"></div>
+                            <div class="app-container-search-bar2"></div>
+                            <div class="app-container-search-bar3"></div>
+                            <div class="app-container-search-bar4"></div>
+                        </div>
+                        <div class="app-row-text1">
+                            <p class="app-text-search-bar1">TEST</p>
+                            <p class="app-text-search-bar2">TEST</p>
+                            <p class="app-text-search-bar3">TEST</p>
+                            <p class="app-text-search-bar4">TEST</p>
+                        </div>
+                        <div class="app-column-container2">
+                            <div class="app-container-search-bar1"></div>
+                            <div class="app-container-search-bar2"></div>
+                            <div class="app-container-search-bar3"></div>
+                            <div class="app-container-search-bar4"></div>
+                        </div>
+                        <div class="app-row-text2">
+                            <p class="app-text-search-bar1">TEST</p>
+                            <p class="app-text-search-bar2">TEST</p>
+                            <p class="app-text-search-bar3">TEST</p>
+                            <p class="app-text-search-bar4">TEST</p>
+                        </div>
+                        <div class="app-column-container3">
+                            <div class="app-container-search-bar1"></div>
+                            <div class="app-container-search-bar2"></div>
+                            <div class="app-container-search-bar3"></div>
+                            <div class="app-container-search-bar4"></div>
+                        </div>
+                        <div class="app-row-text3">
+                            <p class="app-text-search-bar1">TEST</p>
+                            <p class="app-text-search-bar2">TEST</p>
+                            <p class="app-text-search-bar3">TEST</p>
+                            <p class="app-text-search-bar4">TEST</p>
+                        </div>
+                        <div class="app-column-container4">
+                            <div class="app-container-search-bar1"></div>
+                            <div class="app-container-search-bar2"></div>
+                            <div class="app-container-search-bar3"></div>
+                            <div class="app-container-search-bar4"></div>
+                        </div>
+                        <div class="app-row-text4">
+                            <p class="app-text-search-bar1">TEST</p>
+                            <p class="app-text-search-bar2">TEST</p>
+                            <p class="app-text-search-bar3">TEST</p>
+                            <p class="app-text-search-bar4">TEST</p>
+                        </div>
+                        <div class="app-column-container5">
+                            <div class="app-container-search-bar1"></div>
+                            <div class="app-container-search-bar2"></div>
+                            <div class="app-container-search-bar3"></div>
+                            <div class="app-container-search-bar4"></div>
+                        </div>
+                        <div class="app-row-text5">
+                            <p class="app-text-search-bar1">TEST</p>
+                            <p class="app-text-search-bar2">TEST</p>
+                            <p class="app-text-search-bar3">TEST</p>
+                            <p class="app-text-search-bar4">TEST</p>
+                        </div>
                     </div>
                     <div class="nav-screen-bt"></div>
                 </div>
@@ -121,10 +133,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
+        <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+            <p class="m-0 text-center text-white">Copyright &copy; Okino's Website 2023</p>
         </div>
     </footer>
 
