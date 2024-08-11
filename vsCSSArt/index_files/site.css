@@ -68,7 +68,6 @@ img,
 svg,
 video {
     vertical-align: middle;
-    
 }
 
 /*
@@ -149,9 +148,8 @@ hr {
 
 #phone-container {
     position: relative;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
     border: medium outset #333533;
     border-radius: var(--phone-container-radius);
     height: 634.84995072px;
@@ -162,7 +160,7 @@ hr {
 
 .front-camera-circle {
     margin-left: 121px;
-    margin-top: 1.5px; 
+    margin-top: 1.5px;
     border: thin solid #f8f9fa;
     border-radius: 50px;
     height: 14.8px;
@@ -223,7 +221,6 @@ hr {
     -moz-transition: 0.3s;
     -o-transition-delay: 0.3s;
     -ms-transition-delay: 0.3s;
-   
 }
 
 
@@ -454,16 +451,17 @@ app-container-template {
 .app-column-container3,
 .app-column-container4,
 .app-column-container5 {
-    display: inline-flex;
-    /* grid-template-columns: min-content min-content min-content min-content; */
-    /* padding: 20px 45px; */
+    display: grid;
+    grid-template-columns: min-content min-content min-content min-content; 
+    padding: 20px 45px;
     margin: -5px 0px;
-    vertical-align: middle;
-    flex-wrap: wrap;
+    /*vertical-align: middle;
+    flex-wrap: wrap;*/
 }
 
 .app-img {
     object-fit: fill;
+   
 }
 
 /* Review: there may be only one containner */
@@ -472,12 +470,12 @@ app-container-template {
 #app-row-container3,
 #app-row-container4,
 #app-row-container5 {
-    display: grid;
-    grid-template-columns: min-content min-content min-content min-content; 
-    padding: 20px 45px; 
+    display: inline-flex;
+    /* grid-template-columns: min-content min-content min-content min-content; */
+    /* padding: 20px 45px; */
     margin: -5px 0px;
-    /*vertical-align: middle;
-    flex-wrap: wrap;*/
+    vertical-align: middle;
+    flex-wrap: wrap;
 }
 
 
@@ -498,36 +496,35 @@ app-container-template {
 }
 
 
-.app-text-search-bar1, 
-.app-text-search-bar2, 
-.app-text-search-bar3, 
-.app-text-search-bar4, 
-.app-text-search-bar5 {
-    margin-top: 0px;
+.app-text-search-bar
+{
+    margin-top: 0;
     vertical-align: middle;
     overflow-wrap: break-word;
     inline-size: 25px;
     display: inline;
-    height: 10px;
-    width: 23px; 
+    font-size: 1.05em;
+    line-height: 1em;
+        
 }
 
 
 
 @media (width: 25px) {
-
 }
 
 .app-text-search-bar1 {
     padding-left: 15px;
-   
 }
+
 .app-text-search-bar2 {
     padding-left: 60px;
 }
+
 .app-text-search-bar3 {
     padding-left: 60px;
 }
+
 .app-text-search-bar4 {
     padding-left: 60px;
 }
@@ -544,4 +541,3 @@ app-container-template {
     height: 0.09em;
     bottom: 0;
 }
-    
