@@ -16,10 +16,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="img\fingerprint_base-display.png" />
     <Content Include="scripts\scrolling-nav.js" />
-    <Content Include="index.html" />
+    <Content Include="index_files\index.html" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\jquery-3.3.1.js" />
     <Content Include="scripts\site.js" />
-    <Content Include="webonline_use-pieces-as-needed.txt" />
   </ItemGroup>
 </Project>
