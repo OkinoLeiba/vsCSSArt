@@ -405,10 +405,13 @@ hr {
 
 .search-bar-apps {
     margin: 0px 8px 40px;
+    padding-left: 10px;
     border-radius: 50px;
-    width: 330px;
+    width: 20.625em;
     height: 39.2px;
+    max-width: 31em;
     background-color: darkgray;
+ 
 }
 
 #text-search {
@@ -441,53 +444,52 @@ app-container-template {
     width: 56px;
     background-color: lightgoldenrodyellow;
     border-radius: 24px;
-    margin: 0px;
+    margin: 0;
 }
 
-#app-row-container1 {
+#app-row-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.app-column-container1,
-.app-column-container2,
-.app-column-container3,
-.app-column-container4,
-.app-column-container5 {
+.app-column-container {
     display: inline-flex;
-    /* grid-template-columns: min-content min-content min-content min-content; */
-    /* padding: 20px 45px; */
-    margin: -5px 0px;
+    margin: 0;
     vertical-align: middle;
     flex-wrap: wrap;
+    gap: 8px;
+}
+
+.app-column-container-spc {
+    padding-top: 10px !important;
+}
+
+.app-container-search-bar {
+    padding: 0 8px;
 }
 
 .app-img {
     object-fit: fill;
+    aspect-ratio: 56/56;
+    border-radius: 30%;
+    background-color: blueviolet;
 }
 
 /* Review: there may be only one containner */
-#app-row-container1,
-#app-row-container2,
-#app-row-container3,
-#app-row-container4,
-#app-row-container5 {
+#app-row-container {
     display: grid;
-    grid-template-columns: min-content min-content min-content min-content; 
-    padding: 20px 45px; 
-    margin: -5px 0px;
-    /*vertical-align: middle;
-    flex-wrap: wrap;*/
+    grid: auto-flow / repeat(4, auto);
+    /*! grid-template-columns: min-content min-content min-content min-content; */ 
+
+    padding: 0px 22px; 
+    margin: 0;
+    /*! vertical-align: middle; */ /*! flex-wrap: wrap; */
 }
 
 
 
 
-#app-row-text-container1,
-#app-row-text-container2,
-#app-row-text-container3,
-#app-row-text-container4,
-#app-row-text-container5 {
+#app-row-text-container {
     color: var(--white);
     font-size: 11px;
     display: inline-flex;
@@ -498,12 +500,8 @@ app-container-template {
 }
 
 
-.app-text-search-bar1, 
-.app-text-search-bar2, 
-.app-text-search-bar3, 
-.app-text-search-bar4, 
-.app-text-search-bar5 {
-    margin-top: 0px;
+.app-text-search-bar {
+    margin-top: 0;
     vertical-align: middle;
     overflow-wrap: break-word;
     inline-size: 25px;

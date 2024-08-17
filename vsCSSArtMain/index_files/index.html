@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html data-lt-installed="true">
+<head>
+    <base href="./"> 
+    <script>
+        window.location.assign('./');
+    </script>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Design of cell phone with CSS4 and minimal JavaScript.">
+    <meta name="author" content="Okino Kamali Leiba">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="content/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="content/scrolling-nav.css" rel="stylesheet">
+    <link href="content/site.css" rel="stylesheet">
+
+    <title></title>
+</head>
+
+    <body id="page-top">
+        <section id="bg-yellow-pg">
+            <div id="phone-container">
+                <div id="front-camera-circle" class="front-camera-circle" style="display: none;"></div>
+                <div id="right-button-long"></div>
+                <div id="right-button-short" onclick="toggleCSS()"></div>
+                <img id="bt-inv-center-toggle" src="img/fingerprint_base-display.png" alt="fingerprint id" height="5" width="5" onclick="toggleCSS()" style="display: none;">
+                <div id="bg-group-landing_screen" class="bg-group-landing_screen" style="display: none;">
+                    <div id="phone-screen-background" class="phone-screen-background" style="display: none;">
+                        <div id="border-top-gray">
+                            <p id="left-logo-service">SADT&amp;T</p>
+                            <div class="front-camera-circle-black"></div>
+                            <img class="key-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/vpn-service-connected.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/vpn-service-connected.jpg?$ORIGIN_JPG$" src="img/img_indicator/vpn-service-connected.jpg" alt="key located top right" height="24.8" width="24.8" style="">
+                            <img class="battery-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/powersaving_mode-activated.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/powersaving_mode-activated.jpg?$ORIGIN_JPG$" src="img/img_indicator/powersaving_mode-activated.jpg" alt="battery located top right" height="24.8" wclassth="24.8" style="">
+                            <img class="clock-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/alarm-activated.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/alarm-activated.jpg?$ORIGIN_JPG$" src="img/img_indicator/alarm-activated.jpg" alt="clock located top right" height="24.8" width="24.8" style="">
+                            <img class="sound_indicator-border-top" data-desktop-src=" https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/mute-mode.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/mute-mode.jpg?$ORIGIN_JPG$" src="img/img_indicator/mute-mode.jpg" alt="sound_indicator located top right" height="24.8" width="24.8" style="">
+                            <img class="wifi_coverage-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/wi-fi-connected.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/wi-fi-connected.jpg?$ORIGIN_JPG$" src="img/img_indicator/wi-fi-connected.jpg" alt="network_coverage located top right" height="24.8" width="24.8" style="">
+                            <img class="signal_strength-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/signal-strength.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/signal-strength.jpg?$ORIGIN_JPG$" src="img/img_indicator/signal-strength.jpg" alt="signal_strength located top right" height="24.8" width="24.8" style="">
+                            <p class="battery_percentage-border-top" alt="battery_percentage located top right" height="24.8" width="24.8">100%</p>
+                            <img class="battery_indicator-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/battery-charging.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/battery-charging.jpg?$ORIGIN_JPG$" src="img/img_indicator/battery-charging.jpg" alt="battery_indicator located top right" height="24.8" width="24.8" style="">
+                            <!--TODO: review and address src is incomplete and image not present?-->
+                        </div>
+                        <div class="border-bottom-gray">
+                            <div class="border-bottom-gray-l2">
+                                <div class="border-bottom-gray-l3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="all-app-search" class="all-app-search" style="display: block;">
+                    <div id="all-app-background" class="all-app-background" style="display: block;">
+                        <div class="status-top-display">
+                            <p class="left-logo-time" id="left-logo-time">18:16</p>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div class="front-camera-circle-black"></div>
+                            <img class="key-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/vpn-service-connected.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/vpn-service-connected.jpg?$ORIGIN_JPG$" src="img/img_indicator/vpn-service-connected.jpg" alt="key located top right" height="24.8" width="24.8" style="">
+                            <img class="battery-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/powersaving_mode-activated.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/powersaving_mode-activated.jpg?$ORIGIN_JPG$" src="img/img_indicator/powersaving_mode-activated.jpg" alt="battery located top right" height="24.8" wclassth="24.8" style="">
+                            <img class="clock-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/alarm-activated.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/alarm-activated.jpg?$ORIGIN_JPG$" src="img/img_indicator/alarm-activated.jpg" alt="clock located top right" height="24.8" width="24.8" style="">
+                            <img class="sound_indicator-border-top" data-desktop-src=" https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/mute-mode.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/mute-mode.jpg?$ORIGIN_JPG$" src="img/img_indicator/mute-mode.jpg" alt="sound_indicator located top right" height="24.8" width="24.8" style="">
+                            <img class="wifi_coverage-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/wi-fi-connected.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/wi-fi-connected.jpg?$ORIGIN_JPG$" src="img/img_indicator/wi-fi-connected.jpg" alt="network_coverage located top right" height="24.8" width="24.8" style="">
+                            <img class="signal_strength-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/signal-strength.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/signal-strength.jpg?$ORIGIN_JPG$" src="img/img_indicator/signal-strength.jpg" alt="signal_strength located top right" height="24.8" width="24.8" style="">
+                            <p class="battery_percentage-border-top" alt="battery_percentage located top right" height="24.8" width="24.8">100%</p>
+                            <img class="battery_indicator-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/battery-charging.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/sup&lt;img id=" app-img-container1" ="" src="img/img_indicator/index.html" height="56" width="56">
+                        </div>
+
+
+
+                        <!--<a href="https://www.google.com" id="text-search">Search</a>-->
+
+                        <input class="search-bar-apps" type="search" name="search-bar" value="Search...">
+                        <p id="search-dots">...</p>
+                        <div id="app-row-container">
+                            <div class="app-column-container">
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" src="img/google__g__logo.png" height="56" width="56">
+                                    <p class="app-text-search-bar">Google</p>
+                                </div>
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" src="img/boa_logo.png" height="56" width="56">
+                                    <p class="app-text-search-bar">TEST</p>
+                                </div>
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" height="56" width="56" src="img/youtube_icon.png">
+                                    <p class="app-text-search-bar">TEST</p>
+                                </div>
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" src="img/index.html" height="56" width="56">
+                                    <p class="app-text-search-bar">TEST</p>
+                                </div>
+                            </div>
+                            <!--<div id="app-row-text-container">
+                            <p class="app-text-search-bar1">TEST</p>
+                            <p class="app-text-search-bar2">TEST</p>
+                            <p class="app-text-search-bar3">TEST</p>
+                            <p class="app-text-search-bar4">TEST</p>
+                        </div>-->
+                            <div class="app-column-container">
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" height="56" width="56" src="img/icons8_espn_48.png">
+                                    <p class="app-text-search-bar">ESPN</p>
+                                </div>
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" height="56" width="56" src="img/tinder_icon.png">
+                                    <p class="app-text-search-bar">Tinder</p>
+                                </div>
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" height="56" width="56" src="img/cashapp_icon.png">
+                                    <p class="app-text-search-bar">CashApp</p>
+                                </div>
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" src="img/index.html" height="56" width="56">
+                                    <p class="app-text-search-bar">TEST</p>
+                                </div>
+                            </div>
+                            <!--<div id="app-row-text-container">
+                            <p class="app-text-search-bar1">TEST</p>
+                            <p class="app-text-search-bar2">TEST</p>
+                            <p class="app-text-search-bar3">TEST</p>
+                            <p class="app-text-search-bar4">TEST</p>
+                        </div>-->
+                            <div class="app-column-container">
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" height="56" width="56" src="img/linkedin_icon.png">
+                                    <p class="app-text-search-bar">LinkedIn</p>
+                                </div>
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" height="56" width="56" src="img/uber_icon.png">
+                                    <p class="app-text-search-bar">TEST</p>
+                                </div>
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" height="56" width="56" src="img/reminder_icon.png">
+                                    <p class="app-text-search-bar">TEST</p>
+                                </div>
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" height="56" width="56" src="img/facebook_app_icon.png">
+                                    <p class="app-text-search-bar">TEST</p>
+                                </div>
+                            </div>
+                            <!-- <div id="app-row-text-container">
+                             <p class="app-text-search-bar1">TEST</p>
+                             <p class="app-text-search-bar2">TEST</p>
+                             <p class="app-text-search-bar3">TEST</p>
+                             <p class="app-text-search-bar4">TEST</p>
+                         </div>-->
+                            <div class="app-column-container">
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" height="56" width="56" src="img/wikipedia_icon.png">
+                                    <p class="app-text-search-bar">TEST</p>
+                                </div>
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" height="56" width="56" src="img/whatsApp_icon.png">
+                                    <p class="app-text-search-bar">TEST</p>
+                                </div>
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" height="56" width="56" src="img/spotify_icon.png">
+                                    <p class="app-text-search-bar">TEST</p>
+                                </div>
+                                <div class="app-container-search-bar">
+                                    <img class="app-img" height="56" width="56" src="img/mail_icon.png">
+                                    <p class="app-text-search-bar">TEST</p>
+                                </div>
+                            </div>
+                            <!--<div id="app-row-text-container4">
+                            <p class="app-text-search-bar1">TEST</p>
+                            <p class="app-text-search-bar2">TEST</p>
+                            <p class="app-text-search-bar3">TEST</p>
+                            <p class="app-text-search-bar4">TEST</p>
+                        </div>-->
+
+
+                        </div>
+                        <!--<div id="app-row-text-container5">
+                            <p class="app-text-search-bar1">TEST</p>
+                            <p class="app-text-search-bar2">TEST</p>
+                            <p class="app-text-search-bar3">TEST</p>
+                            <p class="app-text-search-bar4">TEST</p>
+                        </div>-->
+                        <div class="nav-screen-bt"></div>
+                        <div id="app-row-container" class="app-column-container-spc">
+                            <div class="app-container-search-bar">
+                                <img class="app-img" height="56" width="56" src="img/settings_icon.png">
+                                <p class="app-text-search-bar">TEST</p>
+                            </div>
+                            <div class="app-container-search-bar">
+                                <img class="app-img" height="56" width="56" src="img/samsung_internet_icon.png">
+                                <p class="app-text-search-bar">TEST</p>
+                            </div>
+                            <div class="app-container-search-bar">
+                                <img class="app-img" height="56" width="56" src="img/sarfi_iphone_icon.png">
+                                <p class="app-text-search-bar">TEST</p>
+                            </div>
+                            <div class="app-container-search-bar">
+                                <img class="app-img" height="56" width="56" src="img/index.html">
+                                <p class="app-text-search-bar">TEST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright © Okino's Website 2023</p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="scripts/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="scripts/bootstrap.js"></script>
+        <script type="text/javascript" src="scripts/site.js"></script>
+        <script type="text/javascript" src="scripts/javascript.js"></script>
+        <script type="text/javascript" src="scripts/scrolling-nav.js"></script>
+
+    </body>
+</html>
