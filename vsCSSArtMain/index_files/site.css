@@ -29,6 +29,7 @@
     --right-button-short-transform-LR: 332.5px;
     --right-button-short-transform-UD: 234px;
     --phone-container-radius: 1.3em;
+    --border-top-transform: -261px;
 }
 
 
@@ -213,16 +214,20 @@ hr {
     border-radius: var(--phone-container-radius);
     height: 627.849951px;
     width: 344.904px;
+    justify-content: center;
+    align-items: center;
     background-image: url(https://cdn.cnn.com/cnnnext/dam/assets/220531142331-bisa-butler-ella-restricted.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: none;
+    flex-direction: column;
     transition-delay: 0.3s;
     -webkit-transition-delay: 0.3s;
     -moz-transition: 0.3s;
     -o-transition-delay: 0.3s;
     -ms-transition-delay: 0.3s;
+    
    
 }
 
@@ -255,11 +260,11 @@ hr {
     background-color: gray;
     height: 15px;
     width: 100%;
-    transform: translate(0px, -8px);
-    -webkit-transform: translate(0px, -8px);
-    -moz-transform: translate(0px, -8px);
-    -o-transform: translate(0px, -8px);
-    -ms-transform: translate(0px, -8px);
+    transform: translate(0px, var(--border-top-transform));
+    -webkit-transform: translate(0px, var(--border-top-transform));
+    -moz-transform: translate(0px, var(--border-top-transform));
+    -o-transform: translate(0px, var(--border-top-transform));
+    -ms-transform: translate(0px, -var(--border-top-transform));
 }
 
 
@@ -272,7 +277,7 @@ hr {
     background-color: red;
     height: 23px;
     width: 100%;
-    bottom: -573px;
+    bottom: -591px;
     /*transform: translate(0px, 586px);
     -webkit-transform: translate(0px, 586px);
     -moz-transform: translate(0px, -8px);
@@ -310,12 +315,28 @@ hr {
     margin-left: 14px;
 }
 
+
+#phone-lock-icon {
+filter: invert(100%);
+position: relative;
+bottom: 30%;
+}
+
+#phone-clock {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    bottom: 30%;
+    /*! margin: 16%; */
+    /*! align-content: center; */
+}
+
 /*
  * Second Phone Screen
  */
 
 .front-camera-circle-black {
-    margin-left: 121px;
+    margin-left: 110px;
     margin-top: 1.5px;
     border: thin solid #f8f9fa;
     border-radius: 50px;
@@ -336,10 +357,11 @@ hr {
     width: 24.8px;
     margin: -6px;
     padding-bottom: 0px;
-    /* background-color: transparent; */
-    /* color: transparent; */
-    /* background-blend-mode: exclusion; */
+    background-color: transparent;
+    /*! color: transparent; */
+    /*! background-blend-mode: exclusion; */
     mix-blend-mode: multiply;
+    /*! filter: contrast(0%); */
 }
 
 .key-border-top {
@@ -483,7 +505,7 @@ app-container-template {
 
     padding: 0px 22px; 
     margin: 0;
-    /*! vertical-align: middle; */ /*! flex-wrap: wrap; */
+    
 }
 
 
@@ -493,7 +515,6 @@ app-container-template {
     color: var(--white);
     font-size: 11px;
     display: inline-flex;
-    /* grid-template-columns: min-content min-content min-content min-content; */
     margin: 5px 12px;
     /* vertical-align: middle; */
     /* flex-wrap: wrap; */
@@ -502,12 +523,14 @@ app-container-template {
 
 .app-text-search-bar {
     margin-top: 0;
+    padding: 0;
+    
     vertical-align: middle;
     overflow-wrap: break-word;
     inline-size: 25px;
-    display: inline;
-    height: 10px;
-    width: 23px; 
+    display: inline-flex;
+    height: auto;
+    width: auto; 
 }
 
 
@@ -531,6 +554,95 @@ app-container-template {
 }
 
 
+/*
+ * Phone Pad Screen
+ */
+
+#phone-pad-contaienr {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 627.849951px;
+    width: 344.904px;
+    
+    border: #333533;
+    border-radius: var(--phone-container-radius);
+    
+    background-image: url(https://cdn8.openculture.com/2020/07/09205233/bisa-butler-TheWhirlwind-det.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    color: lightblue;
+}
+
+#search-icon-phone {
+    background-color: transparent;
+    mix-blend-mode: multiply;
+    width: 18px;
+    height: 18px;
+}
+
+#search-menu {
+    display: flex;
+    position: relative;
+    left: 87px;
+    gap: 8px;
+    
+    
+}
+
+#search-dots-phone {
+    right: 12px;
+    top: 32px;
+    rotate: 90deg;
+    font-size: 20px;
+    margin: 0;
+}
+
+#phone-pad-numbers {
+    display: grid;
+    grid:  auto-flow / repeat(3, 20px);
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+#phone-number-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+  
+}
+
+.phone-numbers {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    width:fit-content;
+    height: fit-content;
+}
+
+.phone-word {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+#phone-section-options {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 16px;
+}
 
 
 

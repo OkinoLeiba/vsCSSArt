@@ -28,8 +28,9 @@
                 <div id="right-button-long"></div>
                 <div id="right-button-short" onclick="toggleCSS()"></div>
                 <img id="bt-inv-center-toggle" src="index_files/fingerprint_base-display.png" alt="fingerprint id" height="5" width="5" onclick="toggleCSS()" style="display: none;">
-                <div id="bg-group-landing_screen" class="bg-group-landing_screen" style="display: none;">
-                    <div id="phone-screen-background" class="phone-screen-background" style="display: none;">
+                <!--Top Display Landing Screen--><div id="bg-group-landing_screen" class="bg-group-landing_screen" style="display: flex;justify-content: flex-start;">
+                    <div id="phone-screen-background" class="phone-screen-background" style="display: flex;">
+                        
                         <div id="border-top-gray">
                             <p id="left-logo-service">SADT&amp;T</p>
                             <div class="front-camera-circle-black"></div>
@@ -43,17 +44,19 @@
                             <img class="battery_indicator-border-top" data-desktop-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/battery-charging.jpg?$ORIGIN_JPG$" data-mobile-src="https://images.samsung.com/is/image/samsung/assets/mx/support/mobile-devices/faq-34/battery-charging.jpg?$ORIGIN_JPG$" src="index_files/battery-charging.jpg" alt="battery_indicator located top right" height="24.8" width="24.8" style="">
                             <!--TODO: review and address src is incomplete and image not present?-->
                         </div>
-                        <div class="border-bottom-gray">
+                        <img id="phone-lock-icon" src="index_files/lock_icon.png" width="24" height="24">
+                        <div id="phone-clock"><iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:227px;height:75px;" src="index_files/html5embed.htm"></iframe></div><!--<div class="border-bottom-gray">
                             <div class="border-bottom-gray-l2">
                                 <div class="border-bottom-gray-l3"></div>
-                            </div>
-                        </div>
+                            </div>-->
+                        
                     </div>
                 </div>
-                <div id="all-app-search" class="all-app-search" style="display: block;">
+                
+                <!--Top Display HomeScreen--><div id="all-app-search" class="all-app-search" style="display: none;">
                     <div id="all-app-background" class="all-app-background" style="display: block;">
                         <div class="status-top-display">
-                            <p class="left-logo-time" id="left-logo-time">22:53</p>
+                            <p class="left-logo-time" id="left-logo-time">18:25</p>
                             <div></div>
                             <div></div>
                             <div></div>
@@ -75,137 +78,204 @@
 
 
                         <!--<a href="https://www.google.com" id="text-search">Search</a>-->
-
-                        <input class="search-bar-apps" type="search" name="search-bar" value="Search...">
+                        <!--Landing Screen with Apps-->
+                        <input class="search-bar-apps" type="search" name="search-bar" placeholder="Search..." aria-placeholder="Search...">
                         <p id="search-dots">...</p>
                         <div id="app-row-container">
                             <div class="app-column-container">
-                                <div class="app-container-search-bar">
-                                    <img class="app-img" src="index_files/google__g__logo.png" height="56" width="56" style="background-color: rgb(127, 255, 212);">
+                                <a class="app-container-search-bar" href="">
+                                    <img class="app-img" src="index_files/google__g__logo.png" height="56" width="56" style="background-color: rgb(0, 255, 255);">
                                     <p class="app-text-search-bar">Google</p>
-                                </div>
-                                <div class="app-container-search-bar">
-                                    <img class="app-img" src="index_files/boa_logo.png" height="56" width="56" style="background-color: rgb(0, 255, 255);">
-                                    <p class="app-text-search-bar">TEST</p>
-                                </div>
-                                <div class="app-container-search-bar">
-                                    <img class="app-img" height="56" width="56" style="background-color: rgb(255, 0, 255);" src="index_files/youtube_icon.png">
-                                    <p class="app-text-search-bar">TEST</p>
-                                </div>
-                                <div class="app-container-search-bar">
-                                    <img class="app-img" height="56" width="56" style="background-color: rgb(255, 255, 255);" src="index_files/netflix_logo_app.png">
-                                    <p class="app-text-search-bar">TEST</p>
-                                </div>
+                                </a>
+                                <a class="app-container-search-bar" href="">
+                                    <img class="app-img" src="index_files/boa_logo.png" height="56" width="56" style="background-color: rgb(255, 255, 0);">
+                                    <p class="app-text-search-bar">BOA</p>
+                                </a>
+                                <a class="app-container-search-bar" href="">
+                                    <img class="app-img" height="56" width="56" style="background-color: rgb(128, 0, 0);" src="index_files/youtube_icon.png">
+                                    <p class="app-text-search-bar">YouTube</p>
+                                </a>
+                                <a class="app-container-search-bar" href="">
+                                    <img class="app-img" height="56" width="56" style="background-color: rgb(0, 255, 0);" src="index_files/netflix_logo_app.png">
+                                    <p class="app-text-search-bar">NetFlix</p>
+                                </a>
                             </div>
                             <!--<div id="app-row-text-container">
-                            <p class="app-text-search-bar1">TEST</p>
-                            <p class="app-text-search-bar2">TEST</p>
-                            <p class="app-text-search-bar3">TEST</p>
-                            <p class="app-text-search-bar4">TEST</p>
-                        </div>-->
+                        <p class="app-text-search-bar1">TEST</p>
+                        <p class="app-text-search-bar2">TEST</p>
+                        <p class="app-text-search-bar3">TEST</p>
+                        <p class="app-text-search-bar4">TEST</p>
+                    </div>-->
                             <div class="app-column-container">
-                                <div class="app-container-search-bar">
+                                <a class="app-container-search-bar" href="">
                                     <img class="app-img" height="56" width="56" src="index_files/icons8_espn_48.png" style="background-color: rgb(128, 0, 0);">
                                     <p class="app-text-search-bar">ESPN</p>
-                                </div>
-                                <div class="app-container-search-bar">
-                                    <img class="app-img" height="56" width="56" src="index_files/tinder_app_icon.png" style="background-color: rgb(255, 0, 0);">
+                                </a>
+                                <a class="app-container-search-bar" href="">
+                                    <img class="app-img" height="56" width="56" src="index_files/tinder_app_icon.png" style="background-color: rgb(0, 128, 0);">
                                     <p class="app-text-search-bar">Tinder</p>
-                                </div>
-                                <div class="app-container-search-bar">
-                                    <img class="app-img" height="56" width="56" src="index_files/cashapp_icon.png" style="background-color: rgb(192, 192, 192);">
+                                </a>
+                                <a class="app-container-search-bar" href="">
+                                    <img class="app-img" height="56" width="56" src="index_files/cashapp_icon.png" style="background-color: rgb(0, 255, 255);">
                                     <p class="app-text-search-bar">CashApp</p>
-                                </div>
-                                <div class="app-container-search-bar">
-                                    <img class="app-img" height="56" width="56" style="background-color: rgb(128, 0, 128);" src="index_files/instagram_icon.png">
-                                    <p class="app-text-search-bar">TEST</p>
-                                </div>
+                                </a>
+                                <a class="app-container-search-bar" href="">
+                                    <img class="app-img" height="56" width="56" style="background-color: rgb(250, 235, 215);" src="index_files/instagram_icon.png">
+                                    <p class="app-text-search-bar">Instagram</p>
+                                </a>
                             </div>
                             <!--<div id="app-row-text-container">
-                            <p class="app-text-search-bar1">TEST</p>
-                            <p class="app-text-search-bar2">TEST</p>
-                            <p class="app-text-search-bar3">TEST</p>
-                            <p class="app-text-search-bar4">TEST</p>
-                        </div>-->
+                        <p class="app-text-search-bar1">TEST</p>
+                        <p class="app-text-search-bar2">TEST</p>
+                        <p class="app-text-search-bar3">TEST</p>
+                        <p class="app-text-search-bar4">TEST</p>
+                    </div>-->
                             <div class="app-column-container">
-                                <div class="app-container-search-bar">
-                                    <img class="app-img" height="56" width="56" src="index_files/linkedin_icon.png" style="background-color: rgb(255, 0, 255);">
+                                <a class="app-container-search-bar" href="">
+                                    <img class="app-img" height="56" width="56" src="index_files/linkedin_icon.png" style="background-color: rgb(128, 128, 0);">
                                     <p class="app-text-search-bar">LinkedIn</p>
-                                </div>
-                                <div class="app-container-search-bar">
-                                    <img class="app-img" height="56" width="56" src="index_files/uber_icon.png" style="background-color: rgb(255, 0, 0);">
-                                    <p class="app-text-search-bar">TEST</p>
-                                </div>
-                                <div class="app-container-search-bar">
-                                    <img class="app-img" height="56" width="56" src="index_files/reminder_icon.png" style="background-color: rgb(0, 0, 0);">
-                                    <p class="app-text-search-bar">TEST</p>
-                                </div>
-                                <div class="app-container-search-bar">
-                                    <img class="app-img" height="56" width="56" src="index_files/facebook_app_icon.png" style="background-color: rgb(192, 192, 192);">
-                                    <p class="app-text-search-bar">TEST</p>
-                                </div>
+                                </a>
+                                <a class="app-container-search-bar" href="">
+                                    <img class="app-img" height="56" width="56" src="index_files/uber_icon.png" style="background-color: rgb(0, 0, 128);">
+                                    <p class="app-text-search-bar">Uber</p>
+                                </a>
+                                <a class="app-container-search-bar" href="">
+                                    <img class="app-img" height="56" width="56" src="index_files/reminder_icon.png" style="background-color: rgb(255, 0, 255);">
+                                    <p class="app-text-search-bar">Reminder</p>
+                                </a>
+                                <a class="app-container-search-bar" href="">
+                                    <img class="app-img" height="56" width="56" src="index_files/facebook_app_icon.png" style="background-color: rgb(0, 255, 0);">
+                                    <p class="app-text-search-bar">FaceBook</p>
+                                </a>
                             </div>
                             <!-- <div id="app-row-text-container">
-                             <p class="app-text-search-bar1">TEST</p>
-                             <p class="app-text-search-bar2">TEST</p>
-                             <p class="app-text-search-bar3">TEST</p>
-                             <p class="app-text-search-bar4">TEST</p>
-                         </div>-->
+                        <p class="app-text-search-bar1">TEST</p>
+                        <p class="app-text-search-bar2">TEST</p>
+                        <p class="app-text-search-bar3">TEST</p>
+                        <p class="app-text-search-bar4">TEST</p>
+                    </div>-->
                             <div class="app-column-container">
-                                <div class="app-container-search-bar">
-                                    <img class="app-img" height="56" width="56" src="index_files/wikipedia_icon.png" style="background-color: rgb(0, 0, 0);">
-                                    <p class="app-text-search-bar">TEST</p>
-                                </div>
-                                <div class="app-container-search-bar">
-                                    <img class="app-img" height="56" width="56" src="index_files/whatsApp_icon.png" style="background-color: rgb(0, 0, 128);">
-                                    <p class="app-text-search-bar">TEST</p>
-                                </div>
-                                <div class="app-container-search-bar">
-                                    <img class="app-img" height="56" width="56" src="index_files/spotify_icon.png" style="background-color: rgb(0, 0, 255);">
-                                    <p class="app-text-search-bar">TEST</p>
-                                </div>
-                                <div class="app-container-search-bar">
-                                    <img class="app-img" height="56" width="56" src="index_files/mail_app_icon.png" style="background-color: rgb(0, 128, 128);">
-                                    <p class="app-text-search-bar">TEST</p>
-                                </div>
+                                <a class="app-container-search-bar" href="">
+                                    <img class="app-img" height="56" width="56" src="index_files/wikipedia_icon.png" style="background-color: rgb(128, 128, 128);">
+                                    <p class="app-text-search-bar">Wikipedia</p>
+                                </a>
+                                <a class="app-container-search-bar" href="">
+                                    <img class="app-img" height="56" width="56" src="index_files/whatsApp_icon.png" style="background-color: rgb(0, 255, 0);">
+                                    <p class="app-text-search-bar">WhatsApp</p>
+                                </a>
+                                <a class="app-container-search-bar" href="">
+                                    <img class="app-img" height="56" width="56" src="index_files/spotify_icon.png" style="background-color: rgb(192, 192, 192);">
+                                    <p class="app-text-search-bar">Spotify</p>
+                                </a>
+                                <a class="app-container-search-bar" href="">
+                                    <img class="app-img" height="56" width="56" src="index_files/mail_app_icon.png" style="background-color: rgb(0, 255, 255);">
+                                    <p class="app-text-search-bar">MailBox</p>
+                                </a>
                             </div>
                             <!--<div id="app-row-text-container4">
-                            <p class="app-text-search-bar1">TEST</p>
-                            <p class="app-text-search-bar2">TEST</p>
-                            <p class="app-text-search-bar3">TEST</p>
-                            <p class="app-text-search-bar4">TEST</p>
-                        </div>-->
+                        <p class="app-text-search-bar1">TEST</p>
+                        <p class="app-text-search-bar2">TEST</p>
+                        <p class="app-text-search-bar3">TEST</p>
+                        <p class="app-text-search-bar4">TEST</p>
+                    </div>-->
 
 
                         </div>
                         <!--<div id="app-row-text-container5">
-                            <p class="app-text-search-bar1">TEST</p>
-                            <p class="app-text-search-bar2">TEST</p>
-                            <p class="app-text-search-bar3">TEST</p>
-                            <p class="app-text-search-bar4">TEST</p>
-                        </div>-->
+                    <p class="app-text-search-bar1">TEST</p>
+                    <p class="app-text-search-bar2">TEST</p>
+                    <p class="app-text-search-bar3">TEST</p>
+                    <p class="app-text-search-bar4">TEST</p>
+                </div>-->
                         <div class="nav-screen-bt"></div>
                         <div id="app-row-container" class="app-column-container-spc">
-                            <div class="app-container-search-bar">
-                                <img class="app-img" height="56" width="56" src="index_files/settings_icon.png" style="background-color: rgb(0, 255, 255);">
-                                <p class="app-text-search-bar">TEST</p>
-                            </div>
-                            <div class="app-container-search-bar">
-                                <img class="app-img" height="56" width="56" src="index_files/samsung_internet_icon.png" style="background-color: rgb(255, 255, 255);">
-                                <p class="app-text-search-bar">TEST</p>
-                            </div>
-                            <div class="app-container-search-bar">
-                                <img class="app-img" height="56" width="56" src="index_files/safari_iphone_icon.png" style="background-color: rgb(192, 192, 192);">
-                                <p class="app-text-search-bar">TEST</p>
-                            </div>
-                            <div class="app-container-search-bar">
-                                <img class="app-img" height="56" width="56" style="background-color: rgb(0, 255, 0);" src="index_files/firefox._icon.png">
-                                <p class="app-text-search-bar">TEST</p>
-                            </div>
+                            <a class="app-container-search-bar" href="">
+                                <img class="app-img" height="56" width="56" src="index_files/settings_icon.png" style="background-color: rgb(0, 128, 128);">
+                                <p class="app-text-search-bar">Settings</p>
+                            </a>
+                            <a class="app-container-search-bar" href="">
+                                <img class="app-img" height="56" width="56" src="index_files/samsung_internet_icon.png" style="background-color: rgb(0, 0, 255);">
+                                <p class="app-text-search-bar">Internet</p>
+                            </a>
+                            <a class="app-container-search-bar" href="">
+                                <img class="app-img" height="56" width="56" src="index_files/safari_iphone_icon.png" style="background-color: rgb(0, 128, 128);">
+                                <p class="app-text-search-bar">Safari</p>
+                            </a>
+                            <a class="app-container-search-bar" href="">
+                                <img class="app-img" height="56" width="56" style="background-color: rgb(255, 255, 0);" src="index_files/firefox._icon.png">
+                                <p class="app-text-search-bar">FireFox</p>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
+            <!--Phone Pad--><div id="phone-pad-contaienr">
+                <div id="search-menu">
+                    <img id="search-icon-phone" alt="Magnifying glass icon" src="index_files/magnifying_glass.jpg" width="20" height="20">
+                    <p id="search-dots-phone">...</p>
+                </div>
+
+                <input id="search-input-phone">
+
+                <div id="phone-pad-numbers">
+                    <div id="phone-number-wrapper">
+                        <p class="phone-numbers">1</p>
+                        <p class="phone-word">&amp;</p>
+                    </div>
+                    <div id="phone-number-wrapper">
+                        <p class="phone-numbers">2</p>
+                        <p class="phone-word">ABC</p>
+                    </div>
+                    <div id="phone-number-wrapper">
+                        <p class="phone-numbers">3</p>
+                        <p class="phone-word">DEF</p>
+                    </div>
+                    <div id="phone-number-wrapper">
+                        <p class="phone-numbers">4</p>
+                        <p class="phone-word">GHI</p>
+                    </div>
+                    <div id="phone-number-wrapper">
+                        <p class="phone-numbers">5</p>
+                        <p class="phone-word">JKL</p>
+                    </div>
+                    <div id="phone-number-wrapper">
+                        <p class="phone-numbers">6</p>
+                        <p class="phone-word">MNO</p>
+                    </div>
+                    <div id="phone-number-wrapper">
+                        <p class="phone-numbers">7</p>
+                        <p class="phone-word">PQRS</p>
+                    </div>
+                    <div id="phone-number-wrapper">
+                        <p class="phone-numbers">8</p>
+                        <p class="phone-word">TUV</p>
+                    </div>
+                    <div id="phone-number-wrapper">
+                        <p class="phone-numbers">9</p>
+                        <p class="phone-word">WXYZ</p>
+                    </div>
+                    <div id="phone-number-wrapper">
+                        <p class="phone-numbers">*</p>
+                    </div>
+                    <div id="phone-number-wrapper">
+                        <p class="phone-numbers">0</p><p class="phone-word">+</p>
+                    </div>
+                    <div id="phone-number-wrapper">
+                        <p class="phone-numbers">#</p>
+                    </div>   
+                    
+                </div>
+
+                <img id="phone-icon-exe">
+
+                <div id="phone-section-options">
+                    <p id="option-keypad">Keypad</p>
+                    <p id="option-recent">Recent</p>
+                    <p id="option-contact">Contact</p>
+                </div>
+            </div></div>
+
+            
+            
 
         </section>
 

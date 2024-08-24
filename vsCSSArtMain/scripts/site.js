@@ -6,15 +6,18 @@
     var toggeleElementLandingScreen = document.getElementById("bg-group-landing_screen");
     //toggleElement.classList.toggle("phone-screen-background");
 
-    if (toggeleElementLandingScreen.style.display === "none" && toggleElementForeground.style.display === "block") {
+    if (toggeleElementLandingScreen.style.display === "none" && toggleElementForeground.style.display === "flex") {
         //toggleElementBackground.style.display = "block";
         toggleElementForeground.style.display = "none";
         toggeleElementFingerPrint.style.display = "none";
-        toggeleElementLandingScreen.style.display = "block";
+        toggeleElementLandingScreen.style.display = "flex";
+        toggeleElementLandingScreen.style.flexDirection = "column";
     } else {
         //toggleElementBackground.style.display = "none";
-        toggleElementForeground.style.display = "block";
-        toggeleElementFingerPrint.style.display = "block";
+        toggleElementForeground.style.display = "flex";
+        toggeleElementFingerPrint.style.display = "flex";
+        toggleElementForeground.style.flexDirection = "column";
+        toggeleElementFingerPrint.style.flexDirection = "column";
         toggeleElementLandingScreen.style.display = "none";
     }
 }
